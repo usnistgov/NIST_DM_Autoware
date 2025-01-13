@@ -106,7 +106,7 @@ repositories:
   # sensor_kit
   sensor_kit/NIST_DM_sensor_kit_launch: # Customized sensor kit launch files for NIST DM
     type: git
-    url: https://github.com/usnistgov/NIST_DM_SensorKit.git
+    url: git@github.com:usnistgov/NIST_DM_SensorKit.git
     version: main
   sensor_kit/sample_sensor_kit_launch:
     type: git
@@ -127,7 +127,7 @@ repositories:
   # vehicle
   vehicle/NIST_DM_vehicle_launch: # Customized vehicle launch files for NIST DM
     type: git
-    url: https://github.com/usnistgov/NIST_DM_VehicleLaunch.git
+    url: git@github.com:usnistgov/NIST_DM_VehicleLaunch.git
     version: main
   vehicle/sample_vehicle_launch:
     type: git
