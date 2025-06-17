@@ -76,9 +76,13 @@ repositories:
     type: git
     url: https://github.com/autowarefoundation/autoware_launch.git
     version: 0.40.0
-  launcher/NIST_DM_AutowareLaunch: # Customized launch files for NIST DM
+  # launcher/NIST_DM_AutowareLaunch: # Customized launch files for NIST DM
+  #   type: git
+  #   url: https://github.com/usnistgov/NIST_DM_AutowareLaunch.git
+  #   version: main
+  launcher/ford_fusion_autoware_launch: # Customized launch files for Ford Fusion
     type: git
-    url: https://github.com/usnistgov/NIST_DM_AutowareLaunch.git
+    url: https://github.com/usnistgov/ford_fusion_autoware_launch.git
     version: main
   # sensor_component
   sensor_component/external/sensor_component_description:
@@ -93,6 +97,26 @@ repositories:
     type: git
     url: https://github.com/tier4/nebula.git
     version: v0.2.1
+  sensor_component/external/lucid_vision_driver:
+    type: git
+    url: https://github.com/usnistgov/lucid_vision_driver.git
+    version: main
+  sensor_component/external/ouster_driver:
+    type: git
+    url: https://github.com/ouster-lidar/ouster-ros.git
+    version: ros2
+  sensor_component/external/ouster_driver_adapter:
+    type: git
+    url: https://github.com/usnistgov/ouster_point_type_adapter.git
+    version: main
+  sensor_component/external/novatel_oem7_driver:
+    type: git
+    url: https://github.com/novatel/novatel_oem7_driver.git
+    version: 20.6.0
+  sensor_component/external/novatel_gnss_orientation_adapter:
+    type: git
+    url: https://github.com/Sanchitkedia/novatel_gnss_orientation_adapter.git
+    version: main
   # Fork of transport_drivers that enables reduction of copy operations
   sensor_component/transport_drivers:
     type: git
@@ -104,14 +128,18 @@ repositories:
     url: https://github.com/autowarefoundation/ros2_socketcan
     version: main
   # sensor_kit
-  sensor_kit/NIST_DM_sensor_kit_launch: # Customized sensor kit launch files for NIST DM
+  # sensor_kit/NIST_DM_sensor_kit_launch: # Customized sensor kit launch files for NIST DM
+  #   type: git
+  #   url: git@github.com:usnistgov/NIST_DM_SensorKit.git
+  #   version: main
+  sensor_kit/ford_fusion_sensor_kit_launch: # Customized sensor kit launch files for Ford Fusion
     type: git
-    url: git@github.com:usnistgov/NIST_DM_SensorKit.git
+    url: git@github.com:usnistgov/ford_fusion_sensor_kit_launch.git
     version: main
-  sensor_kit/sample_sensor_kit_launch:
-    type: git
-    url: https://github.com/autowarefoundation/sample_sensor_kit_launch.git
-    version: 0.39.0
+  # sensor_kit/sample_sensor_kit_launch:
+  #   type: git
+  #   url: https://github.com/autowarefoundation/sample_sensor_kit_launch.git
+  #   version: 0.39.0
   sensor_kit/external/awsim_sensor_kit_launch: # TODO: Integrate into sample_sensor_kit_launch
     type: git
     url: https://github.com/tier4/awsim_sensor_kit_launch.git
@@ -125,14 +153,18 @@ repositories:
     url: https://github.com/autowarefoundation/single_lidar_sensor_kit_launch.git
     version: 0.39.0
   # vehicle
-  vehicle/NIST_DM_vehicle_launch: # Customized vehicle launch files for NIST DM
+  # vehicle/NIST_DM_vehicle_launch: # Customized vehicle launch files for NIST DM
+  #   type: git
+  #   url: git@github.com:usnistgov/NIST_DM_VehicleLaunch.git
+  #   version: main
+  vehicle/ford_fusion_vehicle_launch: # Customized vehicle launch files for Ford Fusion
     type: git
-    url: git@github.com:usnistgov/NIST_DM_VehicleLaunch.git
+    url: git@github.com:usnistgov/ford_fusion_vehicle_launch.git
     version: main
-  vehicle/sample_vehicle_launch:
-    type: git
-    url: https://github.com/autowarefoundation/sample_vehicle_launch.git
-    version: main
+  # vehicle/sample_vehicle_launch:
+  #   type: git
+  #   url: https://github.com/autowarefoundation/sample_vehicle_launch.git
+  #   version: main
   vehicle/awsim_labs_vehicle_launch:
     type: git
     url: https://github.com/autowarefoundation/awsim_labs_vehicle_launch.git
@@ -141,12 +173,20 @@ repositories:
     type: git
     url: https://github.com/tier4/pacmod_interface.git
     version: main
+  vehicle/external/ford_fusion_vehicle_interface:
+    type: git 
+    url: https://github.com/Sanchitkedia/ford_fusion_vehicle_interface.git
+    version: main
   # param
   param/autoware_individual_params:
     type: git
     url: https://github.com/autowarefoundation/autoware_individual_params.git
     version: main
-  param/NIST_DM_IndividualParams: # Customized individual params for NIST DM
+  # param/NIST_DM_IndividualParams: # Customized individual params for NIST DM
+  #   type: git
+  #   url: https://github.com/usnistgov/NIST_DM_IndividualParams.git
+  #   version: main
+  param/ford_fusion_individual_params: # Customized individual params for Ford Fusion
     type: git
-    url: https://github.com/usnistgov/NIST_DM_IndividualParams.git
+    url: https://github.com/usnistgov/ford_fusion_individual_params.git
     version: main
